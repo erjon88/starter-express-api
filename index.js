@@ -10,7 +10,7 @@ const app = express();
 
 // Set up middleware to handle request body
 app.use(express.json());
-
+ 
 app.get("/ip", async (req, res) => {
   const resp = await axios.get('http://ip-api.com/json/?fields=61439');
   res.send(resp.data);
