@@ -15,7 +15,7 @@ app.get("/ip", async (req, res) => {
   const resp = await axios.get('http://ip-api.com/json/?fields=61439');
   res.send(resp.data);
 });
-
+console.log();
 // Set up endpoint for the TV content
 app.get("/tv/:id/index.m3u8", async (req, res) => {
   try{
